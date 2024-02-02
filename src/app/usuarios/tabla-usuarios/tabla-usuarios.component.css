@@ -1,0 +1,25 @@
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+  overflow: hidden;
+  width: 90%;
+  border-radius: 10px;
+}
+
+th,
+td {
+  font-family: "Motnserrat", sans-serif;
+  text-align: left;
+  font-size: 12px;
+  padding: 10px;
+}
+
+th {
+  background-color: #7691ab;
+  color: white;
+}
+
+tr:nth-of-type(odd) {
+  background: #eee;
+}

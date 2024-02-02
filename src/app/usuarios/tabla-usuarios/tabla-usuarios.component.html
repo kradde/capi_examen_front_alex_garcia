@@ -1,0 +1,25 @@
+<div *ngIf="usuarios && usuarios.length > 0">
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre de usuario</th>
+        <th>Fecha de nacimiento</th>
+        <th>Edad</th>
+        <th>Dirección</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.name }}</td>
+        <td>{{ usuario.fecha_nacimiento }}</td>
+        <td>{{ usuario.edad }}</td>
+        <td>
+          {{ usuario.user_domicilio.domicilio }},
+          {{ usuario.user_domicilio.numero_exterior }},
+          {{ usuario.user_domicilio.colonia }}, {{ usuario.user_domicilio.cp }},
+          {{ usuario.user_domicilio.ciudad }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
